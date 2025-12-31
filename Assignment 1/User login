@@ -1,0 +1,24 @@
+package com.index;
+import java.util.Scanner;
+public class UserLogin {
+
+	public static void main(String[] args) {
+		Scanner obj = new Scanner(System.in);
+		
+		System.out.println("Enter Username");
+		String username = obj.next();
+		
+		System.out.println("Enter Password");
+		String password = obj.next();
+		
+		if(username.equals("Divya") && password.equals("123456")){
+			System.out.println("Login Suceesful");
+			
+		}else {
+			System.out.println("Invalid");
+		}
+		
+
+	}
+
+}
