@@ -1,0 +1,23 @@
+package com.index;
+import java.util.Scanner;
+public class AtmPin {
+
+	public static void main(String[] args) {
+		Scanner obj = new Scanner(System.in);
+         
+		int correctedpin = 0601;
+		int enteredpin = 0;
+		
+		while(enteredpin != correctedpin) {
+			System.out.println("Enter ATM pin:");
+			enteredpin = obj.nextInt();
+			
+			if(enteredpin != correctedpin) {
+				System.out.println("wrong pin");
+			}
+		}
+		System.out.println("ur pin is correct!");
+		obj.close();
+	}
+
+}
