@@ -1,0 +1,20 @@
+package com.index;
+
+import java.util.Scanner;
+
+public class Continue {
+
+	public static void main(String[] args) {
+		Scanner obj = new Scanner(System.in);
+		char yesorNo;
+		
+		do {
+			System.out.println("Doing some work");
+			System.out.println("Do u want to continue:");
+			yesorNo = obj.next().charAt(0);
+			
+		}while(yesorNo == 'y');
+		 System.out.println("Program ended");
+	}
+
+}
