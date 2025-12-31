@@ -1,0 +1,36 @@
+package com.index;
+import java.util.Scanner;
+public class AddSub {
+
+	public static void main(String[] args) {
+		Scanner obj = new Scanner(System.in);
+		
+		int num;
+		
+		do {
+			System.out.println("Add:");
+			System.out.println("Sub:");
+			System.out.println("Exit");
+			System.out.println("Enter num:");
+			num = obj.nextInt();
+			
+			switch(num) {
+			case 1:
+				System.out.println("Result"+ (10+10));
+				break;
+			case 2:
+				System.out.println("Result"+(10-5));
+				break;
+				
+			case 3:
+				System.out.println("Exit");
+				break;
+				
+			default:
+				System.out.println("Invalid number");
+			}
+		}while(num!=3);
+
+	}
+
+}
